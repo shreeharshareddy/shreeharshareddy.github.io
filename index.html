@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kasam Harsha Vardhan Reddy - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #1e1e2f, #27293d);
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            transition: background 0.3s;
+        }
+
+        header:hover {
+            background: rgba(0, 0, 0, 0.9);
+        }
+
+        header a {
+            text-decoration: none;
+            color: #fff;
+            margin: 0 15px;
+            transition: color 0.3s;
+        }
+
+        header a:hover {
+            color: #0dcaf0;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background: url('https://source.unsplash.com/random/1920x1080?technology') no-repeat center/cover;
+            color: #fff;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            margin: 0;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin: 10px 0;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        section i {
+            font-size: 2rem;
+            color: #0dcaf0;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            position: relative;
+        }
+
+        .skills div {
+            background: #27293d;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .skills div:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .projects .card {
+            background: #27293d;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s;
+        }
+
+        .projects .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .projects .card h3 {
+            margin: 0 0 10px;
+        }
+
+        #contact {
+            position: relative;
+            overflow: hidden;
+        }
+
+        #contact:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle, rgba(13, 202, 240, 0.15), transparent);
+            animation: pulse 3s infinite;
+            pointer-events: none; /* Ensure it doesn't block clicks */
+            z-index: 0; /* Keep it behind content */
+        }
+
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            position: relative; /* Ensure stacking context */
+            z-index: 1; /* Raise above pseudo-element */
+        }
+
+        .contact-links a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.5rem;
+            display: inline-block;
+            background: #27293d;
+            padding: 15px;
+            border-radius: 50%;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s, box-shadow 0.3s;
+            z-index: 2; /* Ensure above background and pseudo-elements */
+        }
+
+        .contact-links a:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+        }
+
+        .contact-links a i {
+            color: #0dcaf0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #1e1e2f;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: #0dcaf0;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Kasam Harsha Vardhan Reddy</h2>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Exploring innovation, creating impactful solutions.</p>
+    </div>
+
+    <section id="about">
+        <i class="fas fa-user"></i>
+        <h2>About Me</h2>
+        <p>I am a passionate Computer Science student with a keen interest in Data Science, Machine Learning, Web Development, and innovative problem-solving. Currently pursuing my B.Tech at SR University. I am an enthusiast in data science, always seeking to explore and analyze meaningful insights from data.</p>
+        <p><a href="https://drive.google.com/file/d/1bI5CUhqlRq43DKm0j1rpYOKzRkjmKU6F/view?usp=sharing" target="_blank" style="text-decoration:none; color:#0dcaf0; font-weight: bold;">Download My Resume</a></p>
+    </section>
+
+    <section id="skills">
+        <i class="fas fa-code"></i>
+        <h2>Skills</h2>
+        <div class="skills">
+            <div><h3>Programming</h3><p>C, Python, Java, R</p></div>
+            <div><h3>Web Development</h3><p>HTML, CSS, JavaScript</p></div>
+            <div><h3>Databases</h3><p>SQL, MySQL, MongoDB</p></div>
+            <div><h3>Machine Learning</h3><p>TensorFlow, Scikit-learn</p></div>
+            <div><h3>Data Visualization</h3><p>Tableau, PowerBI</p></div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <i class="fas fa-project-diagram"></i>
+        <h2>Projects</h2>
+        <div class="projects">
+            <div class="card">
+                <h3>IPL Analysis</h3>
+                <p>Analyzing IPL data for insights using Python and data visualization tools.</p>
+                <ul>
+                    <li>Utilized Python libraries like Pandas and Matplotlib for data analysis.</li>
+                    <li>Generated key performance metrics for teams and players.</li>
+                </ul>
+                <a href="https://github.com/2203a54006/IPL-analysis" target="_blank">View Project</a>
+            </div>
+            <div class="card">
+                <h3>Food Delivery Prediction</h3>
+                <p>Using machine learning to predict food delivery times and optimize routes.</p>
+                <ul>
+                    <li>Trained models using datasets from major food delivery services.</li>
+                    <li>Improved accuracy by 15% with advanced algorithms.</li>
+                </ul>
+                <a href="https://github.com/2203a54006/Food-Delivery-Prediction" target="_blank">View Project</a>
+            </div>
+            <div class="card">
+                <h3>Online Voting System</h3>
+                <p>Secure and efficient online voting system with authentication and encryption.</p>
+                <ul>
+                    <li>Implemented using C programming for robust security features.</li>
+                    <li>Ensured data integrity and minimized downtime.</li>
+                </ul>
+                <a href="https://github.com/2203a54006/Online-voting-system" target="_blank">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <i class="fas fa-envelope"></i>
+        <h2>Contact</h2>
+        <div class="contact-links">
+            <a href="mailto:kasamharshareddy9493@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/kasam-harsha/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/2203a54006" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Kasam Harsha Vardhan Reddy. All rights reserved.</p>
+    </footer>
+</body>
+</html>
